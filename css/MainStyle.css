@@ -1,7 +1,7 @@
 * {
       margin:0;
       padding:0;
-  }
+}
 body{
     background-color: grey;
 }
@@ -10,4 +10,5 @@ header{
     padding:0;
 }
 h2{
+    border: solid 2px green;
 }
