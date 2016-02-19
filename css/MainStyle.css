@@ -9,8 +9,8 @@ body{
     background-size: 1920px 1080px;
 }
 header{
+    background-color:rgba(100,100,100,.5);
     color:white;
-    background-color: transparent;
     padding:0;
 }
 h2{
