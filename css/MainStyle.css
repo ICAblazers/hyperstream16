@@ -4,15 +4,21 @@
 }
 body{
     background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
 }
 header{
+    color:white;
     background-color: transparent;
     padding:0;
 }
 h2{
     border: solid 2px green;
+    color:white;
 }
 header button{
     padding-top: 10px;
     margin-top: 20px;
+    background-color: #00068c;
 }
