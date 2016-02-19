@@ -6,9 +6,7 @@ body{
     background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");
 }
 header{
-    background-color: dimgrey;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-color: transparent;
     padding:0;
 }
 h2{
