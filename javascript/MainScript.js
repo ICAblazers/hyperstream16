@@ -10,9 +10,9 @@ $(document).ready(function(){
     $('button').click(function() {
             $(this).animate(
                 {
-                    height: 'hide'
+                    opacity: 'hide'
                 }
-                , 'slow');
+                , 'fast');
         }
     );
 });
