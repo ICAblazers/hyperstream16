@@ -15,4 +15,16 @@ $(document).ready(function(){
                 , 'fast');
         }
     );
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){
+            $('#header').addClass("header-sticky");
+            $('.page-header').addClass("page-header-alt");
+        }
+        else{
+            $('#header').removeClass("header-sticky");
+            $('.page-header').removeClass("page-header-alt");
+
+        }
+    });
 });
