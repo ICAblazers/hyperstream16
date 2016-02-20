@@ -48,10 +48,27 @@ p{
     position: fixed;
     background-color:rgba(100,100,100,.5);
     color:white;
+    height:36px;
 }
 #jumbotron-container{
-    position: relative;
+    padding-top: 128px;
 }
 .page-header-alt{
     margin-top:108px;
+}
+.menu-btn img{
+
+    background-image: url("../images/menu.png");
+    background-size: 32px 32px;
+    background-repeat:no-repeat;
+    background-position: center;
+    height:32px;
+}
+.menu-btn{
+    padding:0px;
+    padding-top: 2px;
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(0,0,0,0);
+    text-shadow: none;
+    box-shadow: none;
 }
