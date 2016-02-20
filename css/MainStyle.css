@@ -14,11 +14,22 @@ header{
     padding:0;
 }
 h2{
-    border: solid 2px green;
     color:white;
 }
-header button{
+.nav-btn{
     padding-top: 10px;
     margin-top: 20px;
+    margin-bottom:10px;
     background-color: #00068c;
+}
+.jumbotron{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: #444 0 5px 5px;
+}
+.page-header{
+    color: black;
+}
+p{
+    color: #ffffff;
 }
