@@ -40,14 +40,12 @@ p{
 
 #header{
     width:100%;
-    padding: 0 50px 0 50px;
     background-color:rgba(100,100,100,.5);
     color:white;
 }
 .header-sticky{
     width:100%;
     position: fixed;
-    padding: 0 50px 0 50px;
     background-color:rgba(100,100,100,.5);
     color:white;
 }
