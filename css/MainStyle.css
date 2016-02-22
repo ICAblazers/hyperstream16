@@ -20,6 +20,7 @@ h2{
     background: rgba(0, 0, 0, 0);
     color: white;
     text-shadow: #444 0 5px 5px;
+    position: absolute;
 }
 .page-header{
     color: black;
@@ -53,9 +54,6 @@ p{
 #jumbotron-container{
     padding-top: 128px;
 }
-.page-header-alt{
-    margin-top:108px;
-}
 .menu-btn img{
 
     background-image: url("../images/menu.png");
@@ -71,4 +69,7 @@ p{
     border-color: rgba(0,0,0,0);
     text-shadow: none;
     box-shadow: none;
+}
+.header-filler{
+    height: 68px;
 }
