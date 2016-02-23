@@ -43,19 +43,21 @@ p{
 }
 
 #header{
+    height:68px;
     width:100%;
-    background-color:rgba(100,100,100,.5);
     color:white;
 }
 .header-sticky{
+
+    background-color:rgba(100,100,100,.5);
     width:100%;
     position: fixed;
-    background-color:rgba(100,100,100,.5);
     color:white;
     height:36px;
 }
 #jumbotron-container{
     padding-top: 128px;
+    margin-top: auto;
 }
 .menu-btn img{
 
@@ -73,6 +75,8 @@ p{
     text-shadow: none;
     box-shadow: none;
 }
-.header-filler{
-    height: 68px;
+#header-fixed {
+
+    background-color:rgba(100,100,100,.5);
+    height:68px;
 }
