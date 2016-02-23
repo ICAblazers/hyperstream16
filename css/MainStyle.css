@@ -10,6 +10,9 @@ header{
 h2{
     color:white;
 }
+#secon{
+    color: #ffffff;
+}
 .nav-btn{
     padding-top: 10px;
     margin-top: 20px;
@@ -39,7 +42,7 @@ p{
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
 }
 #scrollable-2{
-
+    background-image: url("../images/High-Trestle-Trail-Bridge-30.jpg");
 }
 
 #header{
@@ -58,6 +61,9 @@ p{
 #jumbotron-container{
     padding-top: 128px;
     margin-top: auto;
+}
+#jumbotron-container2{
+    padding-top: 128px;
 }
 .menu-btn img{
 
@@ -79,4 +85,11 @@ p{
 
     background-color:rgba(100,100,100,.5);
     height:68px;
+}
+.header-filler2{
+    height: 68px;
+}
+.header-row{
+}
+.header-row2{
 }
