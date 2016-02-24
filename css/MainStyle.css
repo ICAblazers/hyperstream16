@@ -8,6 +8,7 @@ body{
 header{
 }
 h2{
+    margin: 0px;
     color:white;
 }
 #secon{
@@ -31,6 +32,7 @@ h2{
 p{
     color: #ffffff;
 }
+
 .scrollable-content{
 
     background-repeat: no-repeat;
@@ -82,7 +84,6 @@ p{
     box-shadow: none;
 }
 #header-fixed {
-
     background-color:rgba(100,100,100,.5);
     height:68px;
 }
@@ -92,4 +93,18 @@ p{
 .header-row{
 }
 .header-row2{
+}
+.divide {
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    height: 400px;
+    background-color: slategray;
+}
+.div1 {
+    align-content: center;
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
