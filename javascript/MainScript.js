@@ -3,18 +3,6 @@
  */
 
 $(document).ready(function(){
-    $('p').click(function(){
-        $(this).hide();
-    });
-
-    $('button').click(function() {
-            $(this).animate(
-                {
-                    opacity: 'hide'
-                }
-                , 'fast');
-        }
-    );
 
     var header_default_html = $('#header-row').html();
     var header_default_height = $('#header').css('height');

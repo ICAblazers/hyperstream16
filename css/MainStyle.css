@@ -105,9 +105,18 @@ p{
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
     height: 400px;
-    background-color: slategray;
+    background: #000197; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#000197, #535353); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#000197, #535353); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#000197, #535353); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000197, #535353); /* Standard syntax */
 }
-#scrollable-1{
+.footer{
+    background-color:black;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}#scrollable-1{
     /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
 }
