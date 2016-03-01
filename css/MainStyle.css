@@ -101,10 +101,3 @@ p{
     height: 400px;
     background-color: slategray;
 }
-.div1 {
-    align-content: center;
-    width: auto;
-    height: auto;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
