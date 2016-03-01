@@ -1,3 +1,6 @@
+/*##################################*/
+/*  Styles for recurring elements
+/*##################################*/
 * body{
       margin:0;
       padding:0;
@@ -8,67 +11,49 @@ body{
 header{
 }
 h2{
-    margin: 0px;
+    margin: 0;
     color:white;
-}
-#secon{
-    color: #ffffff;
-}
-.nav-btn{
-    padding-top: 10px;
-    margin-top: 20px;
-    margin-bottom:10px;
-    background-color: #00068c;
-}
-.jumbotron{
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    text-shadow: #444 0 5px 5px;
-    position: absolute;
-}
-.page-header{
-    color: black;
 }
 p{
     color: #ffffff;
 }
 
-.scrollable-content{
 
-    background-repeat: no-repeat;
-    background-size: 1920px 1080px;
-    height: 1080px;
-}
-#scrollable-1{
-    /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
-    background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
-}
-#scrollable-2{
-    background-image: url("../images/High-Trestle-Trail-Bridge-30.jpg");
+/*##################################*/
+/*  Styles for the header elements
+/*##################################*/
+
+/*  added by js when the user scrolls down, styles the header-fixed element
+    so that it sticks to the top of the viewport, and condenses it    */
+.header-sticky {
+    width: 100%;
+    position: fixed;
+    height: 36px;
 }
 
+/*changes height and position as the user scrolls   */
+#header-fixed {
+    height:68px;
+    background-color:rgba(100,100,100,.5);
+}
+
+/*  contains #header-fixed, remains at a fixed height to prevent
+    other content jumping as #header-fixed's height is adjusted     */
 #header{
     height:68px;
     width:100%;
     color:white;
 }
-.header-sticky{
 
-    background-color:rgba(100,100,100,.5);
-    width:100%;
-    position: fixed;
-    color:white;
-    height:36px;
-}
-#jumbotron-container{
-    padding-top: 128px;
-    margin-top: auto;
-}
-#jumbotron-container2{
-    padding-top: 128px;
-}
+
+/*----------------------------------*/
+/*  Styles for the dropdown menu button
+/*----------------------------------*/
+
+/*  menu-btn = the condensed header
+    dropdown-menu button.  Replaces
+    .nav-btn's as the window shrinks    */
 .menu-btn img{
-
     background-image: url("../images/menu.png");
     background-size: 32px 32px;
     background-repeat:no-repeat;
@@ -83,16 +68,37 @@ p{
     text-shadow: none;
     box-shadow: none;
 }
-#header-fixed {
-    background-color:rgba(100,100,100,.5);
-    height:68px;
+
+
+
+
+/*----------------------------------*/
+/*  Styles for the nav buttons
+/*----------------------------------*/
+
+/*  nav-btn = buttons in the header, replaced
+    by the menu-btn element as the window
+    shrinks     */
+.nav-btn{
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom:10px;
+    background-color: #00068c;
 }
-.header-filler2{
-    height: 68px;
+
+
+
+/*##################################*/
+/*  Styles for the content
+/*##################################*/
+.jumbotron{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    text-shadow: #444 0 5px 5px;
+    position: absolute;
 }
-.header-row{
-}
-.header-row2{
+.page-header{
+    color: black;
 }
 .divide {
     padding: 0px;
@@ -101,3 +107,25 @@ p{
     height: 400px;
     background-color: slategray;
 }
+#scrollable-1{
+    /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
+    background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
+}
+#scrollable-2{
+    background-image: url("../images/High-Trestle-Trail-Bridge-30.jpg");
+}
+#jumbotron-container{
+    padding-top: 128px;
+    margin-top: auto;
+}
+#jumbotron-container2{
+    padding-top: 128px;
+}
+.scrollable-content{
+     background-repeat: no-repeat;
+     background-size: 1920px 1080px;
+     height: 1080px;
+}
+
+
+
