@@ -24,6 +24,10 @@
     color:white;
 }
 
+#header h2 {
+    padding-top: 16px;
+}
+
 
 /*----------------------------------*/
 /*  Styles for the dropdown menu button

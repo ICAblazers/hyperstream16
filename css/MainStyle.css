@@ -21,26 +21,15 @@
     background: linear-gradient(#000197, #000000, black); /* Standard syntax */
 }
 #scrollable-1{
-
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
     height: 1080px;
     /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
 }
-#scrollable-2{
-
-    height: 1080px;
-    background-image: url("../images/High-Trestle-Trail-Bridge-30.jpg");
-}
 #jumbotron-container{
     padding-top: 128px;
     margin-top: auto;
-}
-#jumbotron-container2{
-    padding-top: 128px;
-}
-.scrollable-content{
-     background-repeat: no-repeat;
-     background-size: 1920px 1080px;
 }
 
 
