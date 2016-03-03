@@ -12,6 +12,9 @@
 }
 #scrollable-1{
     background-repeat: no-repeat;
+background-size:     cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: 1920px 1080px;
     height: 1080px;
     /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
