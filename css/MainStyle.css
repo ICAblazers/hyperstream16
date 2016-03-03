@@ -20,12 +20,6 @@
     background: -moz-linear-gradient(#000197, #000000, black); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#000197, #000000, black); /* Standard syntax */
 }
-.footer{
-    background-color:black;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
 #scrollable-1{
 
     height: 1080px;
