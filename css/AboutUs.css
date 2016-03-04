@@ -7,3 +7,13 @@
     height: 1080px;
     background-image: url("../images/back3.jpg");
 }
+
+
+.page-header{
+    color: black;
+}
+
+#text {
+    padding-top: 128px;
+    margin-top: auto;
+}
