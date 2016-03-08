@@ -17,3 +17,9 @@
     padding-top: 128px;
     margin-top: auto;
 }
+
+.jumbotron{
+    background: rgba(100, 100, 100, 0.8);
+    color: white;
+    text-shadow: #444 0 5px 5px;
+}

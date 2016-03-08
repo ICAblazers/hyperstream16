@@ -3,7 +3,7 @@
 /*  Styles for the content
 /*##################################*/
 .jumbotron{
-    background: rgba(0, 0, 0, 0);
+    background: rgba(100, 100, 100, 0.8);
     color: white;
     text-shadow: #444 0 5px 5px;
 }
