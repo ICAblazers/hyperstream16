@@ -2,11 +2,6 @@
 /*##################################*/
 /*  Styles for the content
 /*##################################*/
-.jumbotron{
-    background: rgba(100, 100, 100, 0.8);
-    color: white;
-    text-shadow: #444 0 5px 5px;
-}
 .page-header{
     color: black;
 }
@@ -19,10 +14,6 @@
     height: 1080px;
     /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
-}
-#jumbotron-container{
-    padding-top: 128px;
-    margin-top: auto;
 }
 
 
