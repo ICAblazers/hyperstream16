@@ -71,11 +71,26 @@
 
 
 
-
-
 .footer{
     background-color:black;
     text-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
+}
+
+
+.invis{
+    display: none;
+}
+
+.nav-compressed{
+    float:right;
+}
+.nav-compressed ul li{
+
+    text-decoration: none;
+}
+
+.dropdown-menu{
+    position:relative;
 }
