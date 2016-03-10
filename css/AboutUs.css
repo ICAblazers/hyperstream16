@@ -23,3 +23,7 @@
     color: white;
     text-shadow: #444 0 5px 5px;
 }
+.jumbotron div{
+    filter:blur(0px);
+}
+

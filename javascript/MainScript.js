@@ -11,14 +11,16 @@ $(document).ready(function(){
         if ($(this).scrollTop() > 1 && compact_header == false){
             compact_header = true;
             $('#header-fixed').stop(true,true).addClass("header-sticky").animate({height: '0'}, {queue:false, duration:'fast', easing:'linear', complete:function(){
-                $('#header-row').html('<button class="btn btn-default col-xs-1 col-xs-offset-11 menu-btn"><img src="../images/menu.png"></button>');
+                $('#nav-default').addClass("invis");
+                $('#nav-compressed').removeClass("invis");
                 $('#header-fixed').animate({height: '38px'}, {queue:false, duration:'fast'});
             }});
         }
         else if ($(this).scrollTop() == 0 && compact_header == true){
             compact_header = false;
             $('#header-fixed').stop(true,true).animate({height: '0'}, {queue:false, duration:'fast', easing:'linear', complete:function(){
-                $('#header-row').html(header_default_html);
+                $('#nav-default').removeClass("invis");
+                $('#nav-compressed').addClass("invis");
                 $('#header-fixed').animate({height: header_default_height}, {queue:false, duration:'fast', complete:function(){
                     $('#header-fixed').removeClass("header-sticky");
                 }});
@@ -29,5 +31,7 @@ $(document).ready(function(){
 
     })
 });
+
+
 function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong>' +
 '<br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);

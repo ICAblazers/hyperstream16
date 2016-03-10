@@ -83,14 +83,17 @@
     display: none;
 }
 
-.nav-compressed{
-    float:right;
+#nav-compressed{
 }
-.nav-compressed ul li{
+#nav-compressed ul li{
 
     text-decoration: none;
 }
 
 .dropdown-menu{
     position:relative;
+}
+
+.page-header{
+    color: black;
 }
