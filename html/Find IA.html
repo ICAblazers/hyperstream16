@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <title>  m </title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
 
     <script type="text/javascript" src="../javascript/MainScript.js"></script>
 
@@ -26,11 +36,11 @@
     <div id="header">
         <div id="header-fixed">
             <div class="container">
-                <div class="row" id="header-row">
+                <div class="row" id="nav-default">
                     <a href="../html/Main.html">
-                    <h2 class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" >
-                        Iowan Project
-                    </h2>
+                        <h2 class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center" >
+                            Iowan Project
+                        </h2>
                     </a>
                     <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4"></div>
                     <a href="../html/SignUp.html">
@@ -50,17 +60,34 @@
                     </a>
                     <a href="../html/Find%20IA.html">
                         <button type="button" class="col-lg-1 col-md-1 col-sm-1 hidden-xs btn btn-default nav-btn">
-                            Featured Iowan's
+                            Featured
                         </button>
                     </a>
+                </div>
+                <div class="row invis" id="nav-compressed">
+                    <div class="dropdown col-xs-offset-11 col-xs-1">
+                        <button class="btn btn-primary menu-btn dropdown-toggle col-xs-12" type="button" data-toggle="dropdown"><img src="../images/menu.png"></button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a href="../html/Main.html">Home</a></li>
+                            <li><a href="../html/SignUp.html">Sign Up</a></li>
+                            <li><a href="../html/Map.html">Map</a></li>
+                            <li><a href="../html/AboutUs.html">About Us</a></li>
+                            <li><a href="../html/Find%20IA.html">Featured Iowans</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container" id="jumbotron-container">
         <div class="jumbotron">
-            <div class="page-header text-center">
-
+            <div class="container"id = "featured_iowans">
+                <div class="featured_profile">
+                    <div class="row">
+                        <div class="col-xs-4"><img src="" alt=""/></div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
