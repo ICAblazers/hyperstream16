@@ -1,0 +1,39 @@
+
+#scrollable-1{
+    background-repeat: no-repeat;
+    background-size:     cover;
+    background-position: center center;
+    height: auto;
+
+    background-color: #5e7e86;
+}
+
+
+.jumbotron {
+    background: rgba(100, 100, 100, 0.8);
+    height: auto;
+    margin-bottom: 150px;
+}
+
+#profile-pic {
+    width:  256px;
+    height: 256px;
+    border-radius: 10px;
+}
+
+#edit-btn{
+    color: #3e7e9d;
+}
+.jumbotron h2{
+    color: #c4c4c4;
+    padding-bottom:10px;
+}
+
+#social-media{
+    padding-bottom:10px;
+}
+
+.social-media-btn {
+    height: 64px;
+    width: 64px;
+}

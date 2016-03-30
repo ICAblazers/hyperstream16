@@ -97,3 +97,10 @@
 .page-header{
     color: black;
 }
+#social-media-dropdown{
+    padding-left:36px;
+}
+#social-media-dropdown img{
+    height: 32px;
+    width: 32px;
+}

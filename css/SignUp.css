@@ -5,12 +5,14 @@
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
     height: 1080px;
-    background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");
+    background-color: #5e7e86;
 }
 
 .jumbotron {
     color: #4691b8;
+    height: 600px;
 }
+
 
 .panel-login {
     border-color: #ccc;
