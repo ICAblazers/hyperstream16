@@ -14,5 +14,32 @@ $(document).ready(function() {
 // Register the callback to be fired every time auth state changes
     var ref = new Firebase("https://sizzling-fire-7136.firebaseio.com");
     ref.onAuth(authDataCallback);
+
+    $("#register-submit").onclick = function(){
+            ref.createUser({
+                email: $("#email").value,
+                password: $("#reg-password").value
+            }, function(error, userData) {
+                if (error) {
+                    switch (error.code) {
+                        case "EMAIL_TAKEN":
+                            console.log("The new user account cannot be created because the email is already in use.");
+                            break;
+                        case "INVALID_EMAIL":
+                            console.log("The specified email is not a valid email.");
+                            break;
+                        default:
+                            console.log("Error creating user:", error);
+                    }
+                } else {
+                    console.log("Successfully created user account with uid:", userData.uid);
+                }
+            });
+
+
+
+    }
+
+
     }
 )
