@@ -2,9 +2,9 @@
 #scrollable-1{
     background-repeat: no-repeat;
     background-size:     cover;
-    background-position: center center;
+    background-position: top center;
+    background-attachment: fixed;
     height: auto;
-
     background-color: #5e7e86;
 }
 
@@ -15,11 +15,6 @@
     margin-bottom: 150px;
 }
 
-#profile-pic {
-    width:  256px;
-    height: 256px;
-    border-radius: 10px;
-}
 
 #edit-btn{
     color: #3e7e9d;
@@ -27,13 +22,4 @@
 .jumbotron h2{
     color: #c4c4c4;
     padding-bottom:10px;
-}
-
-#social-media{
-    padding-bottom:10px;
-}
-
-.social-media-btn {
-    height: 64px;
-    width: 64px;
 }

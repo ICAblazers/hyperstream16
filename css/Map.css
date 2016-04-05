@@ -1,9 +1,10 @@
 
 #scrollable-1{
     background-size:     cover;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 1920px 1080px;
-    height: 1080px;
+    height: auto;
     background-image:url("../images/High-Trestle-Trail-Bridge-30.jpg");
 }
