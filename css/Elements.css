@@ -38,3 +38,7 @@ h2{
     height: 256px;
     border-radius: 10px;
 }
+
+.error {
+    color: red;
+}

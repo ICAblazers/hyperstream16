@@ -34,19 +34,25 @@ $(document).ready(function () {
                     switch (error.code) {
                         case "EMAIL_TAKEN":
                             console.log("The new user account cannot be created because the email is already in use.");
+                            $("#output").html("<p class='error'>" + "The new user account cannot be created because the email is already in use." + "</p>");
                             break;
                         case "INVALID_EMAIL":
                             console.log("The specified email is not a valid email.");
+                            $("#output").html("<p class='error'>" + "The specified email is not a valid email." + "</p>");
                             break;
                         default:
                             console.log("Error creating user:", error);
+                            $("#output").html("<p class='error'>" + "Error creating user:" + error + "</p>");
+
                     }
                 } else {
                     console.log("Successfully created user account with uid:", userData.uid);
                 }
             });
         } else {
-
+            var output = inputError(inputData);
+            console.log(output);
+            $("#output").html("<p class='error'>" + output + "</p>");
         }
     });
     var inputError=function(inputData){
