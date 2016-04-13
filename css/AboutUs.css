@@ -28,3 +28,6 @@
     filter:blur(0px);
 }
 
+#header h2 {
+    padding-top: 0;
+}
