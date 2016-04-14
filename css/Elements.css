@@ -5,7 +5,7 @@
 .jumbotron{
     background: rgba(100, 100, 100, 0.8);
     color: #ffffff;
-    text-shadow: #444 0 5px 5px;
+    text-shadow: #999 0 3px 3px;
 }
 
 #jumbotron-container{
@@ -41,4 +41,9 @@ h2{
 
 .error {
     color: red;
+    font-size: 50%;
+}
+
+.invis{
+    display: none;
 }

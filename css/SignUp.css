@@ -11,7 +11,12 @@
 
 .jumbotron {
     color: #4691b8;
-    height: 600px;
+    height: auto;
+}
+p{
+
+    text-shadow: none;
+
 }
 
 
@@ -110,5 +115,11 @@
     color: #fff;
     background-color: #3b7293;
     border-color: #59b2e0;
+}
+
+
+.jumbotron p .error {
+    color: red;
+    font-size: 10%;
 }
 

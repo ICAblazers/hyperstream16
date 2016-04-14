@@ -4,6 +4,19 @@
 
 $(document).ready(function(){
 
+    function authDataCallback(authData) {
+        if (authData) {
+            $('.signUp').addClass('invis');
+            $('.profile').removeClass('invis');
+        } else {
+            $('.signUp').removeClass('invis');
+            $('.profile').addClass('invis');
+        }
+    }
+
+    var ref = new Firebase("https://ica-stem16.firebaseio.com");
+    ref.onAuth(authDataCallback);
+
     var header_default_html = $('#header-row').html();
     var header_default_height = $('#header').css('height');
     var compact_header = false;
