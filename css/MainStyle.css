@@ -14,7 +14,11 @@
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
 }
 #buttons .btn img{
-    height: 128px;
+    height: 64px;
+}
+
+.imagesmain{
+    height: 10%;
 }
 
 
