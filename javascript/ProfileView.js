@@ -16,9 +16,7 @@ $(document).ready(function() {
         } else {
             window.location.assign('../html/Main.html');
         }
-    };
-
-
+    }
     loadData();
 });
 function getQueryVariable(variable)

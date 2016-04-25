@@ -105,7 +105,7 @@ $(document).ready(function () {
 
         var returnOutput = outputA + outputB + outputC;
         return returnOutput;
-    }
+    };
 
 
 
@@ -122,7 +122,7 @@ $(document).ready(function () {
                 "password": pass
             }, function(error, authData) {
                 if (error) {
-                    loginOutput = ("Login Failed!", error);
+                    loginOutput = "Login Failed!" + error;
                 } else {
                     console.log("Authenticated successfully with payload:", authData);
                     window.location.replace('../html/Main.html');
@@ -131,7 +131,7 @@ $(document).ready(function () {
                 $("#login-output").html("<p class='error'>" + loginOutput + "</p>");
             });
         } else {
-            loginOutput = "Please make sure all fields are filled out and try again"
+            loginOutput = "Please make sure all fields are filled out and try again";
             console.log(loginOutput);
             $("#login-output").html("<p class='error'>" + loginOutput + "</p>");
         }
@@ -143,7 +143,13 @@ $(document).ready(function () {
         uidRef.set({
             firstName: inputData[0],
             lastName: inputData[1],
-            email: inputData[2]
+            email: inputData[2],
+            locationInput: "",
+            occupation: "",
+            about: "",
+            twitter: "",
+            facebook: "",
+            instagram: ""
         }, function () {
             ref.authWithPassword(loginInfo, function () {
                 window.location.assign('../html/Profile.html');
