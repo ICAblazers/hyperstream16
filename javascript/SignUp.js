@@ -144,12 +144,14 @@ $(document).ready(function () {
             firstName: inputData[0],
             lastName: inputData[1],
             email: inputData[2],
-            locationInput: "",
             occupation: "",
             about: "",
             twitter: "",
             facebook: "",
-            instagram: ""
+            instagram: "",
+            location_address: "",
+            location_lat: "",
+            location_lng: ""
         }, function () {
             ref.authWithPassword(loginInfo, function () {
                 window.location.assign('../html/Profile.html');

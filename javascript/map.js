@@ -18,8 +18,15 @@ function init_map() {
 google.maps.event.addDomListener(window, 'load', init_map);
 
 $(document).ready(function(){
+    var usersRef;
+    usersRef = new Firebase("https://ica-stem16.firebaseio.com/users");
+    usersRef.on("value", function(snapshot) {
+        console.log(snapshot.val());
+    }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+        window.location.assign('../html/Main.html');
+    });
+    for (var i in snapshot.val()) {
 
-
-
-
-})
+    }
+});

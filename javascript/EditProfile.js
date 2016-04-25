@@ -1,5 +1,23 @@
 
 $(document).ready(function() {
+    var locationInput = document.getElementById("location");
+    var autocomplete = new google.maps.places.Autocomplete(locationInput);
+
+    google.maps.event.addListener(autocomplete, "place_changed", function(){
+       var place = autocomplete.getPlace();
+        if (!place.geometry) {
+            return;
+        }
+        locationOutput={
+            _formatted_address: place.formatted_address,
+            _lat: place.geometry.location.lat(),
+            _lng: place.geometry.location.lng()
+        }
+    });
+
+
+
+
 
     var userRef;
     function authDataCallback(authData) {
@@ -35,7 +53,6 @@ $(document).ready(function() {
         var inputData=[
             $("#firstName").val(),
             $("#lastName").val(),
-            $("#location").val(),
             $("#occupation").val(),
             $("#about").val(),
             $("#twitter").val(),
@@ -43,16 +60,19 @@ $(document).ready(function() {
             $("#instagram").val()
         ];
         if(inputData[0] && inputData[1]){
-            updaterRef.update({
+            userRef.update({
                 firstName: inputData[0],
                 lastName: inputData[1],
-                locationInput: inputData[2],
-                occupation: inputData[3],
-                about: inputData[4],
-                twitter: inputData[5],
-                facebook: inputData[6],
-                instagram: inputData[7]
+                occupation: inputData[2],
+                about: inputData[3],
+                twitter: inputData[4],
+                facebook: inputData[5],
+                instagram: inputData[6],
+                location_address: locationOutput._formatted_address,
+                location_lat: locationOutput._lat,
+                location_lng: locationOutput._lng
             });
+            window.location.assign('../html/Profile.html');
         } else {
             $("#output").html("The First Name and Last Name fields must be filled out");
         }
