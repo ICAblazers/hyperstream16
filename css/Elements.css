@@ -11,6 +11,7 @@
 #jumbotron-container{
     padding-top: 128px;
     margin-top: auto;
+    padding-bottom: 256px;
 }
 * body{
       margin:0;

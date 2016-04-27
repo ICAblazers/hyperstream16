@@ -17,8 +17,7 @@ $(document).ready(function(){
     var ref = new Firebase("https://ica-stem16.firebaseio.com");
     ref.onAuth(authDataCallback);
 
-    var header_default_html = $('#header-row').html();
-    var header_default_height = $('#header').css('height');
+    var header_default_height = 68;
     var compact_header = false;
     $(window).scroll(function() {
         if ($(this).scrollTop() > 1 && compact_header == false){
@@ -36,7 +35,7 @@ $(document).ready(function(){
                 $('#nav-compressed').addClass("invis");
                 $('.dropdown').removeClass("open");
                 $(".menu-btn").blur();
-                $('#header-fixed').animate({height: header_default_height}, {queue:false, duration:'fast', complete:function(){
+                $('#header-fixed').animate({height: header_default_height + "px"}, {queue:false, duration:'fast', complete:function(){
                     $('#header-fixed').removeClass("header-sticky");
                 }});
             }})

@@ -16,9 +16,10 @@
 #buttons .btn img{
     height: 64px;
 }
-
-.imagesmain{
-    height: 10%;
+.column {
+    background-color: #00415d;
+    border-radius: 10px;
+    height: 256px;
 }
 
 
