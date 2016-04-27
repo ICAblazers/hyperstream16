@@ -1,6 +1,8 @@
 
 $(document).ready(function() {
     var locationInput = document.getElementById("location");
+    var locationOutput;
+    var locationEdited = false
     var autocomplete = new google.maps.places.Autocomplete(locationInput);
 
     google.maps.event.addListener(autocomplete, "place_changed", function(){
@@ -12,7 +14,8 @@ $(document).ready(function() {
             _formatted_address: place.formatted_address,
             _lat: place.geometry.location.lat(),
             _lng: place.geometry.location.lng()
-        }
+        };
+        locationEdited = true;
     });
 
 
@@ -26,7 +29,7 @@ $(document).ready(function() {
             userRef.on("value", function(snapshot) {
                 $("#firstName").val(snapshot.val().firstName);
                 $("#lastName").val(snapshot.val().lastName);
-                $("#location").val(snapshot.val().locationInput);
+                $("#location").val(snapshot.val().location_address);
                 $("#occupation").val(snapshot.val().occupation);
                 $("#about").val(snapshot.val().about);
                 $("#twitter").val(snapshot.val().twitter);
@@ -46,9 +49,7 @@ $(document).ready(function() {
     var ref = new Firebase("https://ica-stem16.firebaseio.com");
 
     ref.onAuth(authDataCallback);
-    ref.offAuth(function(){
-
-    });
+    ref.offAuth(function(){});
     $("#save-btn").on("click", function(){
         var inputData=[
             $("#firstName").val(),
@@ -67,11 +68,15 @@ $(document).ready(function() {
                 about: inputData[3],
                 twitter: inputData[4],
                 facebook: inputData[5],
-                instagram: inputData[6],
-                location_address: locationOutput._formatted_address,
-                location_lat: locationOutput._lat,
-                location_lng: locationOutput._lng
+                instagram: inputData[6]
             });
+            if(locationEdited){
+                userRef.update({
+                    location_address: locationOutput._formatted_address,
+                    location_lat: locationOutput._lat,
+                    location_lng: locationOutput._lng
+                });
+            }
             window.location.assign('../html/Profile.html');
         } else {
             $("#output").html("The First Name and Last Name fields must be filled out");

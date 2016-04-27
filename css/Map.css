@@ -7,4 +7,8 @@
     background-size: 1920px 1080px;
     height: auto;
     background-image:url("../images/High-Trestle-Trail-Bridge-30.jpg");
+
+}
+#gmap_canvas{
+    color: black;
 }
