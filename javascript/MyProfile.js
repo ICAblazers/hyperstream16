@@ -8,7 +8,6 @@ $(document).ready(function() {
             var userRef = new Firebase("https://ica-stem16.firebaseio.com/users/" + authData.uid);
             userRef.on("value", function(snapshot) {
                 var snap = snapshot.val();
-                console.log((snap));
                 $("#name").html((snap).firstName + " " + snap.lastName);
                 $("#location").html(snap.location_address);
                 $("#occupation").html(snap.occupation);

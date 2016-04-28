@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1920px 1080px;
-    height: 2160px;
+    height: auto;
     /*background-image: url("http://inhfblog.org/wp-content/uploads/2015/04/Upper-Iowa-Clint-Farlinger.jpg");*/
     background-image: url("../images/rotary-riverwalk-park-des-moines-ia-dusk-bridge-state-capitol.jpg");
 }
@@ -19,10 +19,29 @@
 .column {
     border-radius: 10px;
     height: auto;
-padding: 10px;
+    padding: 10px;
     background: rgba(70, 70, 70, 0.8);
     color: #ffffff;
     text-shadow: #333 -2px 2px 10px;
+    margin-bottom: 16px;
+}
+#lcol{
+    border-radius: 10px;
+    background: rgba(100, 100, 100, 0.5);
+}
+#rcol{
+    border-radius: 10px;
+    background: rgba(100, 100, 100, 0.5);
+}
+#rcol .column{
+
+    padding-bottom: 13px;
+}
+#mcol{
+    height: 440px;
+}
+.column-tall{
+    height: 640px;
 }
 .jumbotron h1{
     color:white;
@@ -55,5 +74,10 @@ padding: 10px;
     0 3px 3px rgba(0,0,0,.2),
     0 4px 5px rgba(0,0,0,.15);
 }
-
+.column h2{
+    padding-top: 32px;
+}
+.column h1{
+    padding-bottom: 12px;
+}
 
