@@ -52,15 +52,26 @@
 .menu-btn{
     padding:0px;
     padding-top: 2px;
-    background: rgba(0, 0, 0, 0);
-    border-color: rgba(0,0,0,0);
     text-shadow: none;
     box-shadow: none;
 
     width: 68px;
     margin-right: 32px;
 }
+.menu-btn:hover{
+    background-color: rgba(0, 167, 255, 0.29);
 
+}
+.menu-btn #menu2{
+    visibility: hidden;
+}
+.menu-btn:hover > #menu1{
+    visibility: hidden;
+}
+
+.menu-btn:hover > #menu2{
+    visibility: visible;
+}
 
 
 
