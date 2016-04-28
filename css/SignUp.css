@@ -1,17 +1,20 @@
 
 #scrollable-1{
     background-size:     cover;
-    background-position: top center+;
+    background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 1920px 1080px;
-    height: auto;
-    background-color: #5e7e86;
+    height: 870px;
+    background-color: rgba(0, 19, 41, 1);
 }
 
 .jumbotron {
     color: #4691b8;
     height: auto;
+}
+#jumbotron-container{
+    padding-bottom: 0px;
 }
 p{
 
@@ -42,7 +45,7 @@ p{
     transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a.active{
-    color: #3e7e9d;
+    color: #193d47;
     font-size: 18px;
 }
 .panel-login>.panel-heading hr{
@@ -73,7 +76,7 @@ p{
     border-color: #ccc;
 }
 .btn-login {
-    background-color: #59B2E0;
+    background-color: #1d3847;
     outline: none;
     color: #fff;
     font-size: 14px;
@@ -81,26 +84,17 @@ p{
     font-weight: normal;
     padding: 14px 0;
     text-transform: uppercase;
-    border-color: #59B2E6;
+    border-color: #195561;
 }
 .btn-login:hover,
 .btn-login:focus {
     color: #fff;
-    background-color: #3b7293;
+    background-color: #0b1d2b;
     border-color: #53A3CD;
-}
-.forgot-password {
-    text-decoration: underline;
-    color: #888;
-}
-.forgot-password:hover,
-.forgot-password:focus {
-    text-decoration: underline;
-    color: #666;
 }
 
 .btn-register {
-    background-color: #59b2e0;
+    background-color: #1d3847;
     outline: none;
     color: #fff;
     font-size: 14px;
@@ -108,12 +102,12 @@ p{
     font-weight: normal;
     padding: 14px 0;
     text-transform: uppercase;
-    border-color: #59b2e0;
+    border-color: #195561;
 }
 .btn-register:hover,
 .btn-register:focus {
     color: #fff;
-    background-color: #3b7293;
+    background-color: #0b1d2b;
     border-color: #59b2e0;
 }
 

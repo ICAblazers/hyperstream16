@@ -5,7 +5,6 @@ $(document).ready(function () {
     var usersRef = new Firebase("https://ica-stem16.firebaseio.com/users");
     usersRef.on("value", function(snapshot){
         var output = "";
-        console.log(snapshot.val());
         for (var i in snapshot.val()){
             var userRef = new Firebase("https://ica-stem16.firebaseio.com/users/" + i);
             userRef.on("value", function(snapshot){
@@ -35,7 +34,7 @@ $(document).ready(function () {
                 output += '<div class="jumbotron text-center"> \
                                 <div class="row"> \
                                     <div class="col-xs-6"> \
-                                        <img src="http://zblogged.com/wp-content/uploads/2015/11/17.jpg" alt="Your Profile Picture" class="profile-pic"> \
+                                        <img src="http://www.learnly.org/wp-content/themes/wplms/images/avatar.jpg" alt="Your Profile Picture" class="profile-pic"> \
                                     </div> \
                                     <div class="text-center col-xs-6"> \
                                         <h1 id="name">'+ props[0] + " " + props[1] + '</h1> \
@@ -50,7 +49,6 @@ $(document).ready(function () {
                             </div>';
             });
         }
-        console.log(output);
         $("#profiles").html(output);
     });
 

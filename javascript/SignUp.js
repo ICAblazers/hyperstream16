@@ -3,14 +3,6 @@
  */
 // Create a callback which logs the current auth state
 $(document).ready(function () {
-    function authDataCallback(authData) {
-        if (authData) {
-            console.log("User " + authData.uid + " is logged in with " + authData.provider);
-        } else {
-            console.log("User is logged out");
-        }
-    }
-
 // Register the callback to be fired every time auth state changes
     var ref = new Firebase("https://ica-stem16.firebaseio.com");
     ref.onAuth(authDataCallback);
@@ -37,16 +29,12 @@ $(document).ready(function () {
                 if (error) {
                     output += error;
                 } else {
-                    console.log("Successfully created user account with uid:", userData.uid);
-                    output += "Success!";
                     onReg(userData, inputData, loginInfo);
                 }
-                console.log(output);
                 $("#output").html("<p class='error'>" + output + "</p>");
             });
         } else {
             output += inputError(inputData);
-            console.log(output);
             $("#output").html("<p class='error'>" + output + "</p>");
         }
     });
@@ -124,15 +112,12 @@ $(document).ready(function () {
                 if (error) {
                     loginOutput = "Login Failed!" + error;
                 } else {
-                    console.log("Authenticated successfully with payload:", authData);
                     window.location.replace('../html/Main.html');
                 }
-                console.log(loginOutput);
                 $("#login-output").html("<p class='error'>" + loginOutput + "</p>");
             });
         } else {
             loginOutput = "Please make sure all fields are filled out and try again";
-            console.log(loginOutput);
             $("#login-output").html("<p class='error'>" + loginOutput + "</p>");
         }
     });

@@ -8,11 +8,15 @@
     width: 100%;
     position: fixed;
     height: 36px;
+
+    z-index: 10000;
 }
 
 /*changes height and position as the user scrolls   */
 #header-fixed {
     height:68px;
+
+    z-index: 10000;
     background-color:rgba(100,100,100,.5);
 }
 
@@ -22,6 +26,8 @@
     height:68px;
     width:100%;
     color:white;
+
+    z-index: 10000;
 }
 
 #header h2 {
@@ -69,7 +75,14 @@
     padding-top: 10px;
     margin-top: 20px;
     margin-bottom:10px;
-    background-color: #00068c;
+}
+.nav-btn:hover{
+    background-color: rgba(0, 167, 255, 0.29);
+    color: white;
+}
+.active-btn{
+    background-color: rgba(0, 167, 255, 0.29);
+    color:white;
 }
 
 
@@ -81,11 +94,7 @@
     padding-bottom: 4px;
 }
 
-
-#nav-compressed{
-}
 #nav-compressed ul li{
-
     text-decoration: none;
 }
 

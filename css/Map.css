@@ -11,4 +11,12 @@
 }
 #gmap_canvas{
     color: black;
+    border-radius: 10px;
+}
+#map-container{
+    overflow:hidden;
+    height:600px;
+    width:1000px;
+    margin:auto;
+    box-shadow: 10px 10px 10px #444;
 }
