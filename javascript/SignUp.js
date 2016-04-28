@@ -5,7 +5,6 @@
 $(document).ready(function () {
 // Register the callback to be fired every time auth state changes
     var ref = new Firebase("https://ica-stem16.firebaseio.com");
-    ref.onAuth(authDataCallback);
 
     $("#register-submit").on('click', function () {
         var firstName = $("#firstname")[0].value;
