@@ -5,6 +5,8 @@
 
     z-index: 10000;
 }
+
+/*changes height and position as the user scrolls   */
 #header-fixed {
     height:68px;
 
@@ -74,6 +76,7 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
+
 #nav-compressed ul li{
     text-decoration: none;
 }
